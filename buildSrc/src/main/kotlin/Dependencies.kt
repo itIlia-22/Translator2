@@ -36,15 +36,15 @@ object Versions {
     const val interceptor = "3.12.1"
     const val adapterCoroutines = "0.9.2"
     //Koin
-    const val koinAndroid = "2.1.6"
-    const val koinViewModel = "2.1.6"
+    const val koinAndroid = "3.1.2"
+    const val koinViewModel = "3.1.2"
 
     //Coil
     const val coil = "0.11.0"
     //Room
-    const val roomKtx = "2.3.0"
-    const val runtime = "2.3.0"
-    const val roomCompiler = "2.3.0"
+    const val roomKtx = "2.5.0-alpha02"
+    const val runtime = "2.5.0-alpha02"
+    const val roomCompiler = "2.5.0-alpha02"
     //Test
     const val jUnit = "4.12"
     const val runner = "1.2.0"
@@ -72,8 +72,8 @@ object Retrofit {
         "com.squareup.okhttp3:logging-interceptor:${Versions.interceptor}"
 }
 object Koin {
-    const val koin_android = "org.koin:koin-android:${Versions.koinAndroid}"
-    const val koin_view_model = "org.koin:koin-android-viewmodel:${Versions.koinViewModel}"
+    const val koin_android = "io.insert-koin:koin-core:${Versions.koinAndroid}"
+    const val koin_view_model = "io.insert-koin:koin-android:${Versions.koinViewModel}"
 }
 
 object Coil {
