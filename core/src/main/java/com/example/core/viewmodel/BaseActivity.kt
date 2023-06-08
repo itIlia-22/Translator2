@@ -13,10 +13,12 @@ import com.example.utils.ui.AlertDialogFragment
 
 private const val DIALOG_FRAGMENT_TAG = "74a54328-5d62-46bf-ab6b-cbf5d8c79522"
 
-abstract class BaseActivity<T : AppState, I : com.example.core.viewmodel.Interactor<T>> : AppCompatActivity() {
+abstract class BaseActivity<T : AppState, I :Interactor<T>> : AppCompatActivity() {
+
+
 
     private lateinit var binding: LoadingLayoutBinding
-    abstract val model: com.example.core.viewmodel.BaseViewModel<T>
+    abstract val model: BaseViewModel<T>
     protected var isNetworkAvailable: Boolean = false
 
     override fun onCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {

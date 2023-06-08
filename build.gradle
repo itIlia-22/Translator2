@@ -17,7 +17,7 @@ allprojects {
     }
 }
 
-
+//For all subprojects - generate compileSdkVersion, minSdkVersion, targetSdkVersion and Java compatibility
 subprojects {
     afterEvaluate { project ->
         if (project.plugins.findPlugin('android') ?: project.plugins.findPlugin('android-library')) {

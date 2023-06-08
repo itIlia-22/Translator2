@@ -1,9 +1,9 @@
-package com.example.translator.view.descriptionscreen.application
+package com.example.translator.application
 
 import android.app.Application
-import com.example.translator.utils.di.application
-import com.example.translator.utils.di.historyScreen
-import com.example.translator.utils.di.mainScreen
+import com.example.translator.di.application
+import com.example.translator.di.historyScreen
+import com.example.translator.di.mainScreen
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin
 
