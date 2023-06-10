@@ -25,6 +25,9 @@ object Modules {
 }
 
 object Versions {
+
+    const val splashScreen = "1.0.1"
+
     //Design
     const val appcompat = "1.1.0-rc01"
     const val material = "1.0.0"
@@ -57,6 +60,10 @@ object Versions {
     const val jUnit = "4.12"
     const val runner = "1.2.0"
     const val espressoCore = "3.2.0"
+}
+
+object SplashScreen {
+    const val splash = "androidx.core:core-splashscreen:${Versions.splashScreen}"
 }
 
 object Design {

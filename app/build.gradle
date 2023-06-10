@@ -27,6 +27,8 @@ android {
 }
 
 dependencies {
+
+    implementation SplashScreen.splash
     // AndroidX
     implementation Design.appcompat
 // Design
