@@ -7,7 +7,8 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.example.hostoryscreen.R
-import com.example.model.DataModel
+import com.example.model.dto.SearchResultDto
+import com.example.model.userdata.DataModel
 
 class HistoryAdapter : RecyclerView.Adapter<HistoryAdapter.RecyclerItemViewHolder>() {
 

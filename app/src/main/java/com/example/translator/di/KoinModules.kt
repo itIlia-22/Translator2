@@ -4,7 +4,7 @@ import androidx.room.Room
 import com.example.hostoryscreen.history.HistoryActivity
 import com.example.hostoryscreen.history.HistoryInteractor
 import com.example.hostoryscreen.history.HistoryViewModel
-import com.example.model.DataModel
+import com.example.model.dto.SearchResultDto
 import com.example.repository.api.*
 import com.example.repository.api.room.HistoryDataBase
 import com.example.translator.view.main.MainActivity
@@ -17,8 +17,8 @@ import org.koin.dsl.module
 val application = module {
     single { Room.databaseBuilder(get(), HistoryDataBase::class.java, "HistoryDB").build() }
     single { get<HistoryDataBase>().historyDao() }
-    single<Repository<List<DataModel>>> { RepositoryImplementation(RetrofitImplementation()) }
-    single<RepositoryLocal<List<DataModel>>> { RepositoryImplementationLocal(
+    single<Repository<List<SearchResultDto>>> { RepositoryImplementation(RetrofitImplementation()) }
+    single<RepositoryLocal<List<SearchResultDto>>> { RepositoryImplementationLocal(
         RoomDataBaseImplementation(get())
     )
     }

@@ -1,13 +1,13 @@
 package com.example.repository.api
 
 import com.example.model.AppState
-import com.example.model.DataModel
+import com.example.model.dto.SearchResultDto
 import com.example.repository.api.room.HistoryDao
 
 class RoomDataBaseImplementation(private val historyDao: HistoryDao) :
-    DataSourceLocal<List<DataModel>> {
+    DataSourceLocal<List<SearchResultDto>> {
 
-    override suspend fun getData(word: String): List<DataModel> {
+    override suspend fun getData(word: String): List<SearchResultDto> {
         return mapHistoryEntityToSearchResult(historyDao.all())
     }
 

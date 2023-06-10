@@ -2,14 +2,14 @@ package com.example.hostoryscreen.history
 
 import android.os.Bundle
 import androidx.lifecycle.Observer
+import com.example.core.viewmodel.BaseActivity
 import com.example.hostoryscreen.databinding.ActivityHistoryBinding
 import com.example.model.AppState
-import com.example.model.DataModel
+import com.example.model.userdata.DataModel
 import org.koin.android.scope.currentScope
-import org.koin.android.viewmodel.ext.android.viewModel
 
 
-class HistoryActivity : com.example.core.viewmodel.BaseActivity<AppState, HistoryInteractor>() {
+class HistoryActivity : BaseActivity<AppState, HistoryInteractor>() {
 
     private lateinit var binding: ActivityHistoryBinding
     override lateinit var model: HistoryViewModel

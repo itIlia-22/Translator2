@@ -1,14 +1,14 @@
 package com.example.repository.api
 
 import com.example.model.AppState
-import com.example.model.DataModel
+import com.example.model.dto.SearchResultDto
 import com.example.repository.api.room.HistoryEntity
 
-fun mapHistoryEntityToSearchResult(list: List<HistoryEntity>): List<DataModel> {
-    val searchResult = ArrayList<DataModel>()
+fun mapHistoryEntityToSearchResult(list: List<HistoryEntity>): List<SearchResultDto> {
+    val searchResult = ArrayList<SearchResultDto>()
     if (!list.isNullOrEmpty()) {
         for (entity in list) {
-            searchResult.add(DataModel(entity.word, null))
+            searchResult.add(SearchResultDto(entity.word, null))
         }
     }
     return searchResult
